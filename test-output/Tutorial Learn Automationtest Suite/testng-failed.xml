@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Tutorial Learn Automationtest Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.tutorials.qa.listeners.MyListerns"/>
+  </listeners>
+  <test thread-count="5" name="Tutorial Learn Automation TestCases(failed)">
+    <classes>
+      <class name="com.toutorial.test.Login">
+        <methods>
+          <include name="teadDown"/>
+          <include name="verifyLoginWithValidCredentials" invocation-numbers="1"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.toutorial.test.Login -->
+      <class name="com.toutorial.test.Register">
+        <methods>
+          <include name="verifyRegisteringAccountByProvidingAllFileds"/>
+          <include name="VerifyRegisteringWithoutProvidingAnyDetails"/>
+          <include name="setUpMethod"/>
+          <include name="tearDown"/>
+          <include name="verifyRegisterAccountWithExisitingEmail"/>
+        </methods>
+      </class> <!-- com.toutorial.test.Register -->
+    </classes>
+  </test> <!-- Tutorial Learn Automation TestCases(failed) -->
+</suite> <!-- Failed suite [Tutorial Learn Automationtest Suite] -->

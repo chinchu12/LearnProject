@@ -1,0 +1,46 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 32, Failures: 4, Errors: 0, Skipped: 27, Time elapsed: 57.115 s <<< FAILURE! - in TestSuite
+verifyLoginWithValidCredentials(com.toutorial.test.LoginTest)  Time elapsed: 1.789 s  <<< FAILURE!
+java.lang.RuntimeException: java.lang.NullPointerException: Cannot invoke "org.apache.poi.xssf.usermodel.XSSFRow.getCell(int)" because "row" is null
+	at com.toutorial.test.LoginTest.supplyTestData(LoginTest.java:71)
+
+setUp(com.toutorial.test.LoginTest)  Time elapsed: 22.858 s  <<< FAILURE!
+org.openqa.selenium.ElementNotInteractableException: 
+element not interactable
+  (Session info: chrome=110.0.5481.178)
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7e176073d8088292e74104ef7b279d8a, clickElement {id=d0e95ac3-b1cf-479e-88eb-719d523f736a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.178, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Program Files (x86)\scop...}, goog:chromeOptions: {debuggerAddress: localhost:63920}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63920/devtoo..., se:cdpVersion: 110.0.5481.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (7e176073d8088292e74104ef7b279d8a)] -> xpath: //span[text()='My Account']]
+Session ID: 7e176073d8088292e74104ef7b279d8a
+	at com.toutorial.test.LoginTest.setUp(LoginTest.java:39)
+
+setUpMethod(com.toutorial.test.RegisterTest)  Time elapsed: 16.082 s  <<< FAILURE!
+org.openqa.selenium.ElementNotInteractableException: 
+element not interactable
+  (Session info: chrome=110.0.5481.178)
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9d2733e17f623e99b26863d7c8d50e00, clickElement {id=6e00b875-7da9-4371-84ea-1941bc70f8ad}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.178, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Program Files (x86)\scop...}, goog:chromeOptions: {debuggerAddress: localhost:63959}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63959/devtoo..., se:cdpVersion: 110.0.5481.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (9d2733e17f623e99b26863d7c8d50e00)] -> xpath: //span[text()='My Account']]
+Session ID: 9d2733e17f623e99b26863d7c8d50e00
+	at com.toutorial.test.RegisterTest.setUpMethod(RegisterTest.java:35)
+
+setup(com.toutorial.test.SearchProductTest)  Time elapsed: 10.124 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+timeout: Timed out receiving message from renderer: 3.087
+  (Session info: chrome=110.0.5481.178)
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9a8c96dfe10d283f76e80de293d12366, get {url=http://www.tutorialsninja.com/demo/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.178, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Program Files (x86)\scop...}, goog:chromeOptions: {debuggerAddress: localhost:64042}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64042/devtoo..., se:cdpVersion: 110.0.5481.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9a8c96dfe10d283f76e80de293d12366
+	at com.toutorial.test.SearchProductTest.setup(SearchProductTest.java:25)
+
